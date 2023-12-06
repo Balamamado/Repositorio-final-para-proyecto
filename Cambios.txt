@@ -1,3 +1,4 @@
 Proyecto de introduccion a la ingenieria en computacion
 Nombre:Amado Espinoza Hunab Ku Balam
 Grupo: 1158
+Materia: Introduccion a la ingenieria en computacion
