@@ -4,3 +4,4 @@ Grupo: 1158
 Materia: Introduccion a la ingenieria en computacion
 Facultad: Ingenieria en computacion
 Escuela:Universidad Autonoma de Mexico Fes Aragon
+Turno: Vespertino
