@@ -5,3 +5,4 @@ Materia: Introduccion a la ingenieria en computacion
 Facultad: Ingenieria en computacion
 Escuela:Universidad Autonoma de Mexico Fes Aragon
 Turno: Vespertino
+Profe:El gran Aron
