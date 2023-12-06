@@ -1,0 +1,344 @@
+#include<iostream>
+#include <limits> 
+
+using namespace std;
+int main() 
+{
+    int vida = 1;  
+    int decision;
+    int decisionJuego;  
+    bool regresarAlMenuPrincipal;  
+
+    cout << "¡Escapa de la habitacion¡" << endl;
+
+    do 
+    {
+        // Reiniciar la variable para cada iteración del bucle o ciclo que suceda
+        regresarAlMenuPrincipal = false;
+
+        // Ver el estado actual
+        cout << "--- Menu Principal ;) --" << endl;
+        cout << " introduzca su opcion en valor numerico "<<endl;
+        cout << " (Para el inicio confirme 2 veces por favor)"<<endl;
+        cout << "1. Iniciar juego" << endl;
+        cout << "2. Historia" << endl;
+        cout << "3. Creditos " << endl;
+        cout << "4. Salir" << endl;
+        cout << "Selecciona una opcion: ";
+
+        
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+        cin >> decision;
+
+        switch (decision)
+        {
+            case 1:
+                do 
+                {
+                    // Reiniciar la variable para cada iteración del bucle 
+                    regresarAlMenuPrincipal = false;
+
+                    // Ver estado actual
+                    cout << "--- \tBienvenido a escapa de la habitacion, como veras estas encerrado en esta habitacion, alrededor de ti encontraras diferentres muebles y repisas donde estan escondidos diferentes papeles con numeros y una letra .El numero determina la pocision de la letra al reunir todas las letras podras completar la palabra que sera la respuesta al acertijo que esta colocado en la puerta  ---" << endl;
+                    cout << "--- \tPor cierto la primera pista esta en tu bolsillo y te recomiendo que vallas anotando las pistas que encuentras en un papepel o si eres muy bueno intentalo sin pistas veamos quien gana :3  ---" <<endl;
+                    cout << "-- Menu de juego --" << endl;
+                    cout << "1. Buscar en la repisa superior" << endl;
+                    cout << "2. Buscar en los cajones de un mueble viejo" << endl;
+                    cout << "3. Buscar debajo de la cama" << endl;
+                    cout << "4. Revisar el bolsillo" << endl;
+                    cout << "5. Buscar en la repisa con 3 libros" <<endl;
+                    cout << "6. Revisar la lampara" <<endl;
+                    cout << "7. Inspeccionar la puerta" <<endl;
+                    cout << "-- Estado actual --" << endl;
+                    cout << "Vida: " << vida << endl;
+                    cout << "Selecciona una opcion: ";
+
+                    
+                    cin.clear();
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+                    cin >> decisionJuego;  // Utilizamos una nueva variable para que no se confundan
+
+                    switch (decisionJuego)
+                    {
+                        // Código de acciones
+                        case 1:
+                            // Códigos para las 7 opciones posibles
+                            
+                              // Código 1
+                            cout << "--- Estado actual ---" << endl;
+                            cout << "     Vida: " << vida << endl;
+                            cout << "-- Buscas en la repisa superior y ves una caja  --" << endl;
+                            cout << "1. Abrir la caja." << endl;
+                            cout << "Selecciona una opcion: ";
+                            cin >> decisionJuego;
+
+                            if (decisionJuego == 1)
+                            {
+                                cout << "Abres la caja encuentras un papel con la letra N y el numero 1" << endl;
+                                cout<< "--- regresas y ahora a que lugar vas a buscar ---"<< endl;
+                            }
+                             
+                            break;
+                            
+                            case 2:
+                            // Código 2
+                             cout << "--- Estado actual ---" << endl;
+                            cout << "        Vida: " << vida << endl;
+                            cout << "-- Desides buscar en el mueble viejo en que cajon buscas primero superior o inferior? --" << endl;
+                            cout << "1. Cajon superior" << endl;
+                            cout << "2. Cajon inferior " << endl;
+                            cout << "3. Irse" << endl;
+                            cout << "Selecciona una opcion: ";
+                            cin >> decisionJuego;
+
+                            if (decisionJuego == 1) 
+                            {
+						
+							    cout << "No hay nada" << endl;
+                                cout << "Te vas a bucar a otro lado" << endl; 
+                           	}
+                           	
+                            else if (decisionJuego == 2)
+                            {
+                                cout << "Encuentras un papel con la letra E y el numero 6." << endl;
+                                cout << "Continuas con la busqueda en los lugares que faltan" << endl;
+                                
+                            } 
+                            else
+                            { 
+                                cout << "Regreas al inicio ¿En que lugar buscas ahora?." << endl;
+                               
+                            }
+
+                            break;
+                        case 3:
+                            // Código 3
+                           cout << "Buscas debajo de la cama y ves una bola de papel y una bolsa "<<endl;
+                           cout << "        Vida: " << vida << endl;                           
+                            cout << "1. Buscar en la bola de papel"<<endl;
+                            cout << "2. Ver que hay en la bolsa"<<endl;
+                            cout << "3. Djar de buscar ahi y ver en otro lado"<<endl;
+                            cout << "Selecciona una opcion: ";
+                            cin >> decisionJuego;
+
+                            if (decisionJuego == 1)
+                            {
+                                cout << "   Al desdoblar la bola de papel ves un mensaje que solo dice aqui no es :3  "<<endl;
+                                cout << "   Te vas a buscar a otro lugar "<<endl;
+                                
+                            } 
+                            else if (decisionJuego == 2) 
+                            {
+                                 cout << "Al buscar en la bolsa encuentras otro papel con la letra O y el numero 2"<<endl;
+                                 cout << "Bien tienes otra pista ve a buscar a otro lugar"<<endl; 
+                                
+                            } 
+                            else 
+                            {
+                                cout << "Regresamos al principio ahora donde vas a buscar?" <<endl;
+                            }
+
+                            break;
+                        case 4:
+                            // Código 4
+                            cout << "La pista esta en tu bolsillo pero en cual bolsillo?"<<endl;
+                            cout << "        Vida: " << vida << endl;
+                            cout << "1. Revisas tu bolsillo del pantalon"<<endl;
+                            cout << "2. Revisas tu bolsillo de la chamarra"<<endl;
+                            cout << "3. Pura tonteria buscare en otro lado"<<endl;
+                            cout << "Selecciona una opción: "<<endl;
+                            cin >> decisionJuego;
+
+                            if (decisionJuego == 1) 
+                            {
+                                cout << "Al revisar solo ves tus llaves un papel de basura y nada mas "<<endl;
+                                cout << "De seguro era mentira buscare en otro lado" <<endl;
+                                
+                            } 
+                            else if (decisionJuego == 2)
+                            {
+                                cout << "Bien no creo que haya nada pero revisare" <<endl; 
+								cout << "Revisas en tu chmarra y encuentras el papel con la letra B y el numero 4";
+                                cout << "Bien esto ayudara al acertijo buscare en otro lado ahora"<<endl;
+                               
+                            }  
+                            else
+                            {
+                                cout << "No creo que este en mi bolsillo tonterias buscare de verdad las pistas en alguno de estos lugares "<<endl;
+                            
+                            }
+
+                            break;
+                        case 5:
+                        	//codigo 5
+                        	cout << "Buscas en la repisa con 3 libros diferenrtes" << endl;
+                        	cout << "      vida: " <<vida << endl;
+                        	cout << "1. Agarras el primer libro de color rojo"<<endl;
+                            cout << "2. Agarras el segundo libro de color verde "<<endl;
+                            cout << "3. Agarras el tercer libro de color negro"<<endl;
+                            cout << "Selecciona una opción: "<<endl;
+                            cin >> decisionJuego;
+                            
+                              if (decisionJuego == 1) 
+                            {
+                                cout << "Al revisar el libro ves el titulo y se llama el libro verde ves su inrterior pero no hay nada solo palabreria sin sentido "<<endl;
+                                cout << "Que confuso es esto pero seguire buscando aqui no hay nada" <<endl;
+                                
+                            } 
+                            else if (decisionJuego == 2)
+                            {
+							 
+								cout << "Agarras el libro verde lo ves y en el titulo ves que dice el libro rojo al abrirlo esta escrito en grande la letra R y el numero 5" << endl;
+                                cout << "Bien es raro que el libro se llame rojo si es verde pero mientas me de la pista no me importa "<<endl;
+                                cout << " o talves yo soy daltonico? no importa seguire buscando" <<endl;
+                               
+                            }  
+                            else
+                            {
+                                cout << "Revisas el libro negro pero solo es la funda esta vacio y sin hojas "<<endl;
+                                cout << "Esto no ayuda seguire buscando" << endl;
+                            
+                            }
+                            
+                            break;
+                            case 6:
+                        	//codigo 6
+                        	cout << "Ves una lampara algo peculiar" << endl;
+                        	cout << "      vida: " <<vida << endl;
+                        	cout << "1. Revisas la lampara" <<endl;
+                            cout << "2. No tiene nada solo es una lampara  "<<endl;
+                            cout << "Selecciona una opción: "<<endl;
+                            cin >> decisionJuego;
+                            
+                              if (decisionJuego == 1) 
+                            {
+                                cout << "Al revisarla te das cuenta que grabado en la parte de abajo de la lampara esta grabada la letra M y el numero 3" << endl;
+                                cout << "Bien esta pista me ayuda a completar la palabra " <<endl;
+                                cout << "Mientras mas busque mas rapido saldre de aqui o mas esquizofrenico terminare lo que pase primero pero seguire buscando" << endl;
+                                
+                            } 
+                            else if (decisionJuego == 2)
+                            {
+							 
+								cout << "Revisar una lampara si como no ni que fuera un genio de disney" << endl;
+								cout << " Buscare en lugares donde si pueda encontrar una pista " << endl;
+                               
+                            }  
+                            
+                            break;
+                            case 7:
+                            // codigo 7
+                            cout << "Avansas a la puerta y la empiezas a mirar"<<endl;
+                            cout << "        Vida: " << vida << endl;
+                            cout << "1. Ver el acertijo"<<endl;
+                            cout << "2. Completar el acertijo"<<endl;
+                            cout << "3. Seguir buscando"<<endl;
+                            cout << "Selecciona una opción: "<<endl;
+                            cin >> decisionJuego;
+                            
+                              if (decisionJuego == 1) 
+                            {
+                                cout << "En la puerta esta grabado el acertijo que dice "<<endl;
+                                cout << "Que es tuyo pero las demas personas usan mas que tu" <<endl;
+                                cout << "Vez que el acertijo esta incompleto y solo esta escrito TU " << endl;
+                                
+                            } 
+                            else if (decisionJuego == 2)
+                            {
+							 
+								cout << "muy bien ahora tienes 3 palabras para completar el acertijo incompleto" <<endl;
+								cout << "        Vida: " << vida << endl;
+                                cout << "1. Nombre"<<endl;
+                                cout << "2. Tiempo"<<endl;
+                                cout << "3. Palabras"<<endl;
+                                cout << "Selecciona una opción: "<<endl;
+                                cin >> decisionJuego;
+                                
+                                if (decisionJuego == 1)
+                                {
+                                	
+                                	//codigo para la opcion 1(opcion adional 2)
+                                	cout << "Has escapado con exito esa era la respuesta ¡gracias por jugar!El juego termino." <<endl;
+                                	do
+									{
+                                		
+									} while (!regresarAlMenuPrincipal);  // Modificar la condición del ciclo interno para que pare y no continue
+               						 break;
+                                }
+							    else if (decisionJuego == 2)
+								{	
+							         cout << "Respuesta incorrecta" << endl;
+							         cout << "Mejor busca las pistas" << endl;
+							    } 
+                                else
+								{
+									
+								     cout << "Respuesta incorrecta" << endl;
+							         cout << "Mejor busca las pistas" << endl;
+							         
+							    }     
+								break;
+								
+								
+                                  
+                            }  
+                            else
+                            {
+                                cout << "Te alejas de la puerta y sigues bucando "<<endl;
+                            
+                            break;
+                            }
+                            
+                            
+                    }
+
+
+                } while (!regresarAlMenuPrincipal);  // Modificar la condición del ciclo interno
+                break;
+
+            case 2:
+                 
+                            cout << " Te encuentras en una habitacion encerrado" << endl;
+                            cout << " La unica salida es completar la respuesta del acertijo en la puerta buscando alrededor de la habitacion las palabras que completen la respuesta " << endl;
+                            cout << "1. Salir." << endl;
+                            cout << "Selecciona 1 para salir: ";
+                            cin >> decisionJuego;
+
+                            if (decisionJuego == 1)
+                            {
+                                
+                            }
+                break;
+
+            case 3:
+                // Código para la opción 3 (Opción adicional 1)
+                cout << " Proyecto de videojuego " << endl;
+                            cout << " Creador: Amado Espinoza Hunab Ku Balam" << endl;
+                            cout << "Este juego fue echo como proyecto de la materia COMPUTADORAS Y PROGRAMACION Grupo: 1158" << endl;
+                            cout << "1. Salir." << endl;
+                            cout << "Selecciona 1 para salir: ";
+                            cin >> decisionJuego;
+
+                            if (decisionJuego == 1)
+                            {
+                                
+                            }
+                break;
+
+            case 4:
+                // Código para la opción 4 (Opción adicional 2)
+                cout << "¡Gracias por jugar! Nos vemos en la siguiente." << endl;
+                break;
+
+            default:
+                cout << "Opcion no valida. Intentalo de nuevo." << endl;
+                break;
+        }
+
+    } while (decision != 4);
+
+    return 0;                    
+}
