@@ -6,3 +6,5 @@ Facultad: Ingenieria en computacion
 Escuela:Universidad Autonoma de Mexico Fes Aragon
 Turno: Vespertino
 Profe:El gran Aron
+
+Este fue mi proyecto de git hub la verdad me costo mucho y tuve bastantes errores pero aprendi de ello y espero seguir aprendiendo mas gracias profe lo veo en semestres mas adelante
